@@ -1,0 +1,49 @@
+# Arquivos de bytecode / objetos
+*.o
+*.a
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.dll
+
+# Logs e bancos de dados
+*.log
+*.sql
+*.sqlite
+
+# OS ou Editor folders
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*~
+
+# Ambientes virtuais
+env/
+venv/
+ENV/
+
+# Pasta de node_modules/
+node_modules/
+
+# Pasta de distribuição
+/dist
+/build
+
+# Chaves de API e tokens
+*.env
+
+# Arquivos de pacote
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Ferramentas de CI/CD
+/.github
+.gitlab-ci.yml
