@@ -31,9 +31,14 @@ class App {
 
     initializeMiddleware() {
         this.app.use(bodyParser.json());
-    }
+            }
 
     setupRoutes() {
+        this.app.post('/', async (req: Request, res: Response) => {
+            console.log(req.body.value);
+            res.status(200).send();
+        });
+
         this.app.post('/data', async (req: Request, res: Response) => {
             try {
                 const content = req.body;
@@ -82,7 +87,7 @@ class App {
         this.httpServer.listen(PORT, () => {
             console.log(`Server is running on port ${PORT}`);
         });
-    }
+            }
 }
 
 const appInstance = new App();
